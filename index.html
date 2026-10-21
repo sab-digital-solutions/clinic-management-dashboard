@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | JUDE Beauty Clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css?v=2">
+</head>
+<body>
+<div class="overlay" id="overlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <a href="#overview" class="logo"><strong>JUDE</strong><span>BEAUTY CLINIC</span></a>
+  <p class="nav-label">MANAGEMENT</p>
+  <nav id="nav"></nav>
+  <div class="side-foot">
+    <a class="btn-light" id="siteLinkSide" href="https://deeppink-moose-390461.hostingersite.com/" target="_blank" rel="noopener noreferrer">View Website ↗</a>
+    <div class="me"><i class="av" id="meAv">A</i><div><b id="meName">Admin</b><small>Clinic Manager</small></div></div>
+  </div>
+</aside>
+
+<div class="main">
+  <header class="topbar">
+    <button class="burger" id="burger" aria-label="Open menu">☰</button>
+    <div><p class="section-label" id="crumb">DASHBOARD</p><h1 id="pageTitle">Overview</h1></div>
+    <div class="top-actions">
+      <span class="date" id="todayLabel"></span>
+      <a class="btn" id="siteLink" href="https://deeppink-moose-390461.hostingersite.com/" target="_blank" rel="noopener noreferrer">View Website ↗</a>
+    </div>
+  </header>
+  <main id="view"></main>
+</div>
+
+<div class="modal" id="modal"><div class="sheet"><button class="x" id="modalX" aria-label="Close">×</button><div id="modalBody"></div></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
